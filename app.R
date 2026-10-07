@@ -98,8 +98,9 @@ server <- function(input, output, session) {
 
   output$txt_sim <- renderText({
     s <- sim()
-    sprintf("Com esses parâmetros, a dívida vai de %.1f%% para %.1f%% do PIB em %d anos.",
-            s$divida[1], tail(s$divida, 1), input$anos)
+    pct <- function(x) formatC(x, format = "f", digits = 1, decimal.mark = ",")
+    sprintf("Com esses parâmetros, a dívida vai de %s%% para %s%% do PIB em %d anos.",
+            pct(s$divida[1]), pct(tail(s$divida, 1)), input$anos)
   })
 }
 

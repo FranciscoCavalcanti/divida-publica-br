@@ -8,7 +8,7 @@ quanto da dívida vem do déficit primário e quanto vem dos juros.
 
 | Aba | Conteúdo |
 |---|---|
-| Mandatos | Dívida no início e no fim, primário médio e Selic média de cada mandato (FHC 1 a Lula 3) |
+| Mandatos | Dívida no início e no fim, primário médio e Selic média de cada mandato (FHC 1 a Lula 3; a dívida só tem dado a partir de Lula 1 na DLSP e Lula 2 na DBGG) |
 | Por que a dívida mudou? | Barras empilhadas por ano: déficit primário, juros, crescimento do PIB, outros |
 | Simulador | Sliders de Selic, crescimento, inflação e primário projetando a dívida em 5 a 20 anos |
 | Metodologia | Definições, fórmulas e limitações |
@@ -44,7 +44,7 @@ METODOLOGIA.md         texto exibido na aba Metodologia
 
 ## Próximos passos
 
-- [ ] Conferir os códigos SGS em `R/dados.R` no site do Banco Central
+- [x] Conferir os códigos SGS em `R/dados.R` no site do Banco Central (out/2026: juros trocado de 5727 para 5760)
 - [ ] Efeito cambial separado do resíduo "outros"
 - [ ] Despesas obrigatórias x discricionárias (dados do Tesouro Nacional)
 - [ ] Botão para exportar gráfico em formato vertical (stories)

@@ -10,6 +10,14 @@ MANDATOS <- data.frame(
   stringsAsFactors = FALSE
 )
 
+# Média só quando a série cobre o mandato desde o primeiro mês; senão NA
+# (ex.: o primário começa em nov/2002 e não serve para descrever FHC 2).
+media_coberta <- function(x, meses, inicio) {
+  ok <- !is.na(x)
+  if (!any(ok) || min(meses[ok]) > inicio) return(NA_real_)
+  mean(x[ok])
+}
+
 # Resumo por mandato para o indicador escolhido ("dlsp_pib" ou "dbgg_pib").
 # Mandatos sem dados do indicador no início (ex.: DBGG antes de dez/2006) ficam NA:
 # não emendamos séries de metodologias diferentes.
@@ -27,9 +35,9 @@ resumo_mandatos <- function(dados, indicador = "dlsp_pib") {
       divida_inicio = ini,
       divida_fim = fim,
       variacao = fim - ini,
-      primario_medio = mean(d$primario_pib, na.rm = TRUE),
-      juros_medio = mean(d$juros_pib, na.rm = TRUE),
-      selic_media = mean(d$selic, na.rm = TRUE)
+      primario_medio = media_coberta(d$primario_pib, d$mes, m$inicio),
+      juros_medio = media_coberta(d$juros_pib, d$mes, m$inicio),
+      selic_media = media_coberta(d$selic, d$mes, m$inicio)
     )
   })
   out <- do.call(rbind, linhas)

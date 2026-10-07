@@ -9,6 +9,11 @@
 
 **Mandatos.** A dívida "no início" é o último dado antes da posse; "no fim" é o último mês
 do mandato. Dilma 2 termina em agosto de 2016 e Temer começa em setembro de 2016.
+Para o mandato em andamento (Lula 3), "no fim" é o dado mais recente disponível.
+
+**Cobertura.** A DLSP em % do PIB começa em dezembro de 2001 e o resultado primário e os
+juros em novembro de 2002. Por isso os mandatos de FHC aparecem só com a Selic média:
+médias que não cobrem o mandato desde o primeiro mês não são exibidas.
 
 **Decomposição** (somente DLSP, dados de dezembro de cada ano):
 
