@@ -8,7 +8,7 @@ quanto da dívida vem do déficit primário e quanto vem dos juros.
 
 | Aba | Conteúdo |
 |---|---|
-| Mandatos | Dívida no início e no fim, primário médio e Selic média de cada mandato (FHC 1 a Lula 3; a dívida só tem dado a partir de Lula 1 na DLSP e Lula 2 na DBGG) |
+| Mandatos | Dívida no início e no fim, variação total e por ano, resultado primário médio e Selic média de cada mandato (FHC 1 a Lula 3; a dívida só tem dado a partir de Lula 1 na DLSP e Lula 2 na DBGG) |
 | Por que a dívida mudou? | Barras empilhadas por ano: déficit primário, juros, crescimento do PIB, outros |
 | Simulador | Sliders de Selic, crescimento, inflação e primário projetando a dívida em 5 a 20 anos |
 | Metodologia | Definições, fórmulas e limitações |

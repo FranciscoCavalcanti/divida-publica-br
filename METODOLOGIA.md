@@ -11,6 +11,14 @@
 do mandato. Dilma 2 termina em agosto de 2016 e Temer começa em setembro de 2016.
 Para o mandato em andamento (Lula 3), "no fim" é o dado mais recente disponível.
 
+A **variação por ano** divide a variação total pelo tempo, em anos, entre esses dois
+dados. Serve para comparar mandatos de durações diferentes (Dilma 2 teve 20 meses e
+Temer 28), mas não diz nada sobre o ritmo dentro do mandato.
+
+**Resultado primário.** Nos cartões e no simulador, positivo = superávit e
+negativo = déficit. Na decomposição, a barra "déficit primário" fica acima de zero
+quando houve déficit, porque ele aumenta a dívida.
+
 **Cobertura.** A DLSP em % do PIB começa em dezembro de 2001 e o resultado primário e os
 juros em novembro de 2002. Por isso os mandatos de FHC aparecem só com a Selic média:
 médias que não cobrem o mandato desde o primeiro mês não são exibidas.
